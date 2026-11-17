@@ -1,0 +1,2 @@
+# Tested chart dependency; numerical mode uses Python standard library only.
+plotly==7.1.0

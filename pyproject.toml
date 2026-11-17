@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iccc-age-evaluation"
+version = "0.1.0"
+description = "Compare ICCC major group and diagnosis age across three CSV datasets"
+readme = "INSTALL.md"
+requires-python = ">=3.11"
+dependencies = ["plotly==7.1.0"]
+
+[project.scripts]
+iccc-age = "compare_iccc_age_csv:cli"
+
+[tool.setuptools]
+py-modules = ["compare_iccc_age_csv"]
+package-dir = {"" = "scripts"}
